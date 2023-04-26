@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100 p-t-50 p-b-90">
+				<form class="login100-form validate-form flex-sb flex-w" method="POST" action="/registrar_solicitud_de_estudiante/">
+					<span class="login100-form-title p-b-51">
+						Rellenar para enviar solicitud de registro de estudiante
+					</span>
+
+					<!-- <div class="wrap-input100 validate-input m-b-16" data-validate="Username is required">
+						<input class="input100" type="text" name="username" placeholder="Username">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input m-b-16" data-validate="Password is required">
+						<input class="input100" type="password" name="password" placeholder="Password">
+						<span class="focus-input100"></span>
+					</div> -->
+
+
+					<!-- <div class="wrap-input100 validate-input m-b-16" data-validate="nombre is required">
+						<input class="input100" type="text" name="nombre" placeholder="Nombre" pattern="[A-Za-z]{1,20}">
+						<span class="focus-input100"></span>
+					</div>
+					<div class="wrap-input100 validate-input m-b-16" data-validate="apellido is required">
+						<input class="input100" type="text" name="apellido" placeholder="Apellido" pattern="[A-Za-z]{1,20}">
+						<span class="focus-input100"></span>
+					</div>
+					<div class="wrap-input100 validate-input m-b-16" data-validate="identificacion is required">
+						<input class="input100" type="text" name="identificacion" placeholder="Identificación" pattern="[A-Za-z0-9]{1,10}">
+						<span class="focus-input100"></span>
+					</div>
+					<div class="wrap-input100 validate-input m-b-16" data-validate="edad is required">
+						<input class="input100" type="number" name="edad" placeholder="Edad" pattern="[0-9]{1,2}">
+						<span class="focus-input100"></span>
+					</div>
+					<div class="wrap-input100 validate-input m-b-16" data-validate="afinidad_magia is required">
+						<input class="input100" type="text" name="afinidad_magia" placeholder="Afinidad de magia">
+						<span class="focus-input100"></span>
+					</div> -->
+
+					<div class="wrap-input100 validate-input m-b-16" data-validate="Nombre is required">
+						<input class="input100" type="text" name="Nombre" placeholder="Nombre" >
+						<span class="focus-input100"></span>
+					</div>
+					<div class="wrap-input100 validate-input m-b-16" data-validate="Apellido is required">
+						<input class="input100" type="text" name="Apellido" placeholder="Apellido" >
+						<span class="focus-input100"></span>
+					</div>
+					<div class="wrap-input100 validate-input m-b-16" data-validate="Identificacion is required">
+						<input class="input100" type="text" name="Identificacion" placeholder="Identificación" >
+						<span class="focus-input100"></span>
+					</div>
+					<div class="wrap-input100 validate-input m-b-16" data-validate="Edad is required">
+						<input class="input100" type="number" name="Edad" placeholder="Edad" >
+						<span class="focus-input100"></span>
+					</div>
+					<div class="wrap-input100 validate-input m-b-16" data-validate="Afinidad_magia is required">
+						<!-- <input class="input100" type="text" name="Afinidad_magia" placeholder="Afinidad de magia"> -->
+						<input list="Afinidad_magia" class="input100" name="Afinidad_magia" placeholder="Afinidad de magia">
+						    <datalist id="Afinidad_magia">
+					            <option value="Oscuridad" />
+					            <option value="Luz" />
+					            <option value="Fuego" />
+					            <option value="Agua" />
+					            <option value="Viento" />
+					            <option value="Tierra" />
+					        </datalist>
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="container-login100-form-btn m-t-17">
+						<button class="login100-form-btn">
+							Enviar
+						</button>
+					</div>
+
+				</form>
+			</div>
+		</div>
+	</div>
+{% endblock %}
