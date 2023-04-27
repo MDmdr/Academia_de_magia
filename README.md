@@ -3,19 +3,36 @@
 Aplicacion Flask para manejar el registro de solicitudes de estudiantes en la academia de magia.
   
 Configuracion y despliegue:
+En la linea de comandos:
 
 git clone https://github.com/MDmdr/Academia_de_magia.git
 cd Academia_de_magia
-? virtualenv venv -p python3
-? source venv/bin/activate
+
+# Configurar la base de datos
+Crear una nueva base de datos en su sistema gestor nombre: "academia_de_magia".
+Import la base de datos contenida en al archivo "/Academia_de_magia/academia_de_magia.sql".
+cofigurar el acceso de la aplicacion a la base de datos en los archivos:
+"/Academia_de_magia/app.py"
+"/Academia_de_magia/queries_DB/connectionDB.py"
+"/Academia_de_magia/cargar_tipos_de_magia/cargar_datos.py"
+nota: cargar_datos.py sirve para cargar los datos del archivo csv, pero si importo la base, estos ya estaria cargados, y no sera nesesario ejecutarlo de nuevo.
+sobre las variables:
+host = "".
+user = "".
+password = "".
+DataBase = ''.
+
+# Instalar los requerimientos
+cd Academia_de_magia
 pip install -r requirements.txt
+# Desplegar la aplicación:
 python app.py
 
-
 Para abrir la aplicacion colocar "http://localhost:5000/" en el navegador.
+Para navegar y usar la aplicacion web.,
 
 
-# API por postman
+# API por postman ejemplos
 # crear solicitud, ejemplo:
 Metodo: POST
 http://localhost:5000/API/crear_solicitud
@@ -60,5 +77,3 @@ http://localhost:5000/API/consultar_grimorio
 {
 "identificacion" : "10005"
 }
-
-# -------------------
