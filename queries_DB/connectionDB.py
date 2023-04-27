@@ -5,13 +5,13 @@ from sqlalchemy import create_engine, MetaData, Table, text
 host = "localhost:3306"
 user = "root"
 password = "54321bd"
-DataBase = 't2_monte_xan'
+DataBase = 'bd_reino_del_trevol'
 
-# CONFIG monte_xanic EXTERNA
-# host = "montexanic.cacvh5hnp5ks.us-east-2.rds.amazonaws.com"
-# user = "ramon"
-# password = "R4m0.n322"
-# DataBase = 'monte_xanic'
+# CONFIG EXTERNA
+# host = ""
+# user = ""
+# password = ""
+# DataBase = ''
 
 def conection():
     engine = create_engine(
