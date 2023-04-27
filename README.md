@@ -77,3 +77,7 @@ http://localhost:5000/API/consultar_grimorio
 {
 "identificacion" : "10005"
 }
+
+# Ver todas la solicitudes registradas
+Metodo: GET
+http://localhost:5000/API/solicitudes
