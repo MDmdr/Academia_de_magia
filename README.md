@@ -16,7 +16,7 @@ cofigurar el acceso de la aplicacion a la base de datos en los archivos:
 "/Academia_de_magia/queries_DB/connectionDB.py"
 "/Academia_de_magia/cargar_tipos_de_magia/cargar_datos.py"
 nota: cargar_datos.py sirve para cargar los datos del archivo csv, pero si importo la base, estos ya estaria cargados, y no sera nesesario ejecutarlo de nuevo.
-sobre las variables:
+Configurar accesos sobre las variables:
 host = "".
 user = "".
 password = "".
